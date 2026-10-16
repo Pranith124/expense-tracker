@@ -1,0 +1,45 @@
+{
+    "name": "expense-tracker",
+    "version": "1.0.0",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "vite --host 0.0.0.0",
+        "build": "tsc -b && tsc -p tsconfig.server.json && vite build",
+        "preview": "vite preview --host 0.0.0.0",
+        "test": "vitest run",
+        "server": "tsx watch server/index.ts",
+        "start": "tsx server/index.ts"
+    },
+    "dependencies": {
+        "@supabase/supabase-js": "^2.109.0",
+        "dotenv": "^17.4.2",
+        "express": "^5.2.1",
+        "express-rate-limit": "^8.7.1",
+        "lucide-react": "^0.468.0",
+        "mongodb": "^6.21.0",
+        "react": "^19.1.0",
+        "react-dom": "^19.1.0",
+        "tsx": "^4.23.15",
+        "zod": "^4.6.5"
+    },
+    "devDependencies": {
+        "@electric-sql/pglite": "^0.5.10",
+        "@tailwindcss/vite": "^4.1.0",
+        "@testing-library/jest-dom": "^6.9.1",
+        "@testing-library/react": "^16.3.3",
+        "@testing-library/user-event": "^14.6.7",
+        "@types/express": "^5.0.6",
+        "@types/node": "^22.20.5",
+        "@types/react": "^19.1.0",
+        "@types/react-dom": "^19.1.0",
+        "@types/supertest": "^6.0.3",
+        "@vitejs/plugin-react": "^4.4.0",
+        "jsdom": "^26.1.0",
+        "supertest": "^7.3.1",
+        "tailwindcss": "^4.1.0",
+        "typescript": "~5.7.2",
+        "vite": "^6.3.0",
+        "vitest": "^4.1.11"
+    }
+}
