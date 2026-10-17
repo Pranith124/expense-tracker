@@ -1,6 +1,6 @@
 {
   "framework": "vite",
   "installCommand": "npm ci --include=dev",
-  "buildCommand": "npm run build",
+  "buildCommand": "npm run build && node scripts/check-vercel-output.mjs",
   "outputDirectory": "dist"
 }
